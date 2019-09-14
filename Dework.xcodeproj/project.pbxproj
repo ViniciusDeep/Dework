@@ -14,6 +14,9 @@
 		793C053723287129005CB294 /* DeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C053623287129005CB294 /* DeworkTests.swift */; };
 		793C054F2328724B005CB294 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C054E2328724B005CB294 /* MainCoordinator.swift */; };
 		793C05512328731A005CB294 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C05502328731A005CB294 /* Service.swift */; };
+		79408224232D9A220060D8FB /* InsideJobController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79408223232D9A220060D8FB /* InsideJobController.swift */; };
+		79408226232D9B910060D8FB /* InsideJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79408225232D9B910060D8FB /* InsideJobView.swift */; };
+		79408229232D9D560060D8FB /* InsideJobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79408228232D9D560060D8FB /* InsideJobViewModel.swift */; };
 		79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */; };
 		79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489F9232D30A000C3D2C6 /* ColorApp+Extension.swift */; };
 		79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489FD232D316B00C3D2C6 /* Configurable.swift */; };
@@ -58,6 +61,9 @@
 		793C053823287129005CB294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		793C054E2328724B005CB294 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		793C05502328731A005CB294 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		79408223232D9A220060D8FB /* InsideJobController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideJobController.swift; sourceTree = "<group>"; };
+		79408225232D9B910060D8FB /* InsideJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideJobView.swift; sourceTree = "<group>"; };
+		79408228232D9D560060D8FB /* InsideJobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideJobViewModel.swift; sourceTree = "<group>"; };
 		79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorksController.swift; sourceTree = "<group>"; };
 		79F489F9232D30A000C3D2C6 /* ColorApp+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorApp+Extension.swift"; sourceTree = "<group>"; };
 		79F489FD232D316B00C3D2C6 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 		793C0542232871BA005CB294 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				79408220232D9A050060D8FB /* InsideJob */,
 				79F489F5232D2F5B00C3D2C6 /* ListWorks */,
 			);
 			path = Feature;
@@ -232,6 +239,40 @@
 				793C05502328731A005CB294 /* Service.swift */,
 			);
 			path = Providey;
+			sourceTree = "<group>";
+		};
+		79408220232D9A050060D8FB /* InsideJob */ = {
+			isa = PBXGroup;
+			children = (
+				79408227232D9D440060D8FB /* ViewModel */,
+				79408222232D9A150060D8FB /* Controller */,
+				79408221232D9A100060D8FB /* View */,
+			);
+			path = InsideJob;
+			sourceTree = "<group>";
+		};
+		79408221232D9A100060D8FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79408225232D9B910060D8FB /* InsideJobView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79408222232D9A150060D8FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79408223232D9A220060D8FB /* InsideJobController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79408227232D9D440060D8FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79408228232D9D560060D8FB /* InsideJobViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		79F489F5232D2F5B00C3D2C6 /* ListWorks */ = {
@@ -503,6 +544,7 @@
 				79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */,
 				79F48A08232D4AF400C3D2C6 /* RoundableImage.swift in Sources */,
 				79F48A0A232D4DD500C3D2C6 /* CBuilder.swift in Sources */,
+				79408226232D9B910060D8FB /* InsideJobView.swift in Sources */,
 				79F48A1E232D90DA00C3D2C6 /* ListWorksCellViewModel.swift in Sources */,
 				79F48A15232D732300C3D2C6 /* JobsRepository.swift in Sources */,
 				79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */,
@@ -512,9 +554,11 @@
 				79F48A05232D486E00C3D2C6 /* ListWorkCell.swift in Sources */,
 				79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */,
 				79F48A1C232D8A4A00C3D2C6 /* Routes.swift in Sources */,
+				79408224232D9A220060D8FB /* InsideJobController.swift in Sources */,
 				793C05512328731A005CB294 /* Service.swift in Sources */,
 				79F48A19232D898A00C3D2C6 /* Job.swift in Sources */,
 				79F48A0E232D4E1E00C3D2C6 /* LayoutAnchor.swift in Sources */,
+				79408229232D9D560060D8FB /* InsideJobViewModel.swift in Sources */,
 				79F48A0C232D4E0200C3D2C6 /* LayoutAnchor+Operations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

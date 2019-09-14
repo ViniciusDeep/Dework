@@ -47,7 +47,7 @@ extension ListWorksController: UICollectionViewDelegate, UICollectionViewDataSou
         cell.setup(viewModel: viewModel.cellViewModel(forIndex: indexPath.row))
         return cell
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width - 20, height: 150)
     }

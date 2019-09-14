@@ -9,6 +9,7 @@ target 'Dework' do
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'Reusable'
+  pod 'Markdowner'
 
   target 'DeworkTests' do
     inherit! :search_paths

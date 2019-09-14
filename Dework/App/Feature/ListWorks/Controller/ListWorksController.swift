@@ -12,10 +12,13 @@ import RxCocoa
 class ListWorksController: UIViewController, ConfigurableUI {
     var customView: UIView? = ListWorkView()
     
+    var viewModel = ListWorksViewModel()
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         setupView()
         setupComponents()
+        bindViewModel()
     }
     
     fileprivate func setupComponents() {
@@ -23,15 +26,25 @@ class ListWorksController: UIViewController, ConfigurableUI {
         (customView as? ListWorkView)?.collectionView.dataSource = self
         navigationController?.navigationBar.barTintColor = .primaryColor
     }
+    
+    fileprivate func bindViewModel() {
+        viewModel.updateList = {
+            DispatchQueue.main.async {
+                (self.customView as? ListWorkView)?.collectionView.reloadData()
+            }
+        }
+    }
+    
 }
 
 extension ListWorksController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return viewModel.numberOfRows()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = (customView as? ListWorkView)?.collectionView.dequeueReusableCell(for: indexPath, cellType: ListWorkCell.self) else { return UICollectionViewCell() }
+        cell.setup(viewModel: viewModel.cellViewModel(forIndex: indexPath.row))
         return cell
     }
     

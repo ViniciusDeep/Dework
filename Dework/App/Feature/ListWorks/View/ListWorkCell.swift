@@ -22,6 +22,8 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
        let label = UILabel()
        label.text = "Instituto Antlântico"
        label.textColor = .white
+       label.numberOfLines = 0
+       label.lineBreakMode = .byWordWrapping
        return label
     }()
     
@@ -53,9 +55,11 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
         nameJob.cBuild { (make) in
             make.top.equal(to: imageJob.topAnchor, offsetBy: 10)
             make.leading.equal(to: imageJob.trailingAnchor, offsetBy: 10)
+            make.trailing.equal(to: trailingAnchor, offsetBy: -10)
         }
-        
-        
-        
+    }
+    
+    func setup(viewModel: ListWorksCellViewModel) {
+        nameJob.text = viewModel.job?.title
     }
 }

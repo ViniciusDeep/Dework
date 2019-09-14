@@ -25,6 +25,11 @@
 		79F48A0E232D4E1E00C3D2C6 /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A0D232D4E1E00C3D2C6 /* LayoutAnchor.swift */; };
 		79F48A10232D4E4400C3D2C6 /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A0F232D4E4400C3D2C6 /* LayoutProperty.swift */; };
 		79F48A12232D4E5800C3D2C6 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A11232D4E5800C3D2C6 /* LayoutProxy.swift */; };
+		79F48A15232D732300C3D2C6 /* JobsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A14232D732300C3D2C6 /* JobsRepository.swift */; };
+		79F48A17232D848D00C3D2C6 /* ListWorksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A16232D848D00C3D2C6 /* ListWorksViewModel.swift */; };
+		79F48A19232D898A00C3D2C6 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A18232D898A00C3D2C6 /* Job.swift */; };
+		79F48A1C232D8A4A00C3D2C6 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A1B232D8A4A00C3D2C6 /* Routes.swift */; };
+		79F48A1E232D90DA00C3D2C6 /* ListWorksCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A1D232D90DA00C3D2C6 /* ListWorksCellViewModel.swift */; };
 		A35605FE35CA65469404FE05 /* Pods_DeworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1059F0ACC76444D11B395FB4 /* Pods_DeworkTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +69,11 @@
 		79F48A0D232D4E1E00C3D2C6 /* LayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutAnchor.swift; path = Dework/ReusableLayer/View/LayoutAnchor.swift; sourceTree = SOURCE_ROOT; };
 		79F48A0F232D4E4400C3D2C6 /* LayoutProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutProperty.swift; path = Dework/ReusableLayer/View/LayoutProperty.swift; sourceTree = SOURCE_ROOT; };
 		79F48A11232D4E5800C3D2C6 /* LayoutProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Dework/ReusableLayer/View/LayoutProxy.swift; sourceTree = SOURCE_ROOT; };
+		79F48A14232D732300C3D2C6 /* JobsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsRepository.swift; sourceTree = "<group>"; };
+		79F48A16232D848D00C3D2C6 /* ListWorksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorksViewModel.swift; sourceTree = "<group>"; };
+		79F48A18232D898A00C3D2C6 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Job.swift; path = Dework/App/Feature/ListWorks/ViewModel/Job.swift; sourceTree = SOURCE_ROOT; };
+		79F48A1B232D8A4A00C3D2C6 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		79F48A1D232D90DA00C3D2C6 /* ListWorksCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorksCellViewModel.swift; sourceTree = "<group>"; };
 		B10A6042EC7B0A45218631B9 /* Pods-Dework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dework.release.xcconfig"; path = "Target Support Files/Pods-Dework/Pods-Dework.release.xcconfig"; sourceTree = "<group>"; };
 		F3549AF43CCBA6CB372E41AD /* Pods-DeworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeworkTests.release.xcconfig"; path = "Target Support Files/Pods-DeworkTests/Pods-DeworkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +209,7 @@
 		793C0546232871E0005CB294 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				79F48A18232D898A00C3D2C6 /* Job.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -226,6 +237,7 @@
 		79F489F5232D2F5B00C3D2C6 /* ListWorks */ = {
 			isa = PBXGroup;
 			children = (
+				79F48A13232D720800C3D2C6 /* Bussiness */,
 				79F48A01232D330E00C3D2C6 /* ViewModel */,
 				79F48A00232D330A00C3D2C6 /* View */,
 				79F489FF232D330500C3D2C6 /* Controller */,
@@ -277,6 +289,8 @@
 		79F48A01232D330E00C3D2C6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				79F48A16232D848D00C3D2C6 /* ListWorksViewModel.swift */,
+				79F48A1D232D90DA00C3D2C6 /* ListWorksCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -287,6 +301,15 @@
 				79F48A07232D4AF400C3D2C6 /* RoundableImage.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		79F48A13232D720800C3D2C6 /* Bussiness */ = {
+			isa = PBXGroup;
+			children = (
+				79F48A14232D732300C3D2C6 /* JobsRepository.swift */,
+				79F48A1B232D8A4A00C3D2C6 /* Routes.swift */,
+			);
+			path = Bussiness;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,17 +498,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				793C054F2328724B005CB294 /* MainCoordinator.swift in Sources */,
+				79F48A17232D848D00C3D2C6 /* ListWorksViewModel.swift in Sources */,
 				79F48A10232D4E4400C3D2C6 /* LayoutProperty.swift in Sources */,
 				79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */,
 				79F48A08232D4AF400C3D2C6 /* RoundableImage.swift in Sources */,
 				79F48A0A232D4DD500C3D2C6 /* CBuilder.swift in Sources */,
+				79F48A1E232D90DA00C3D2C6 /* ListWorksCellViewModel.swift in Sources */,
+				79F48A15232D732300C3D2C6 /* JobsRepository.swift in Sources */,
 				79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */,
 				793C052223287127005CB294 /* AppDelegate.swift in Sources */,
 				79F48A03232D332A00C3D2C6 /* ListWorkView.swift in Sources */,
 				79F48A12232D4E5800C3D2C6 /* LayoutProxy.swift in Sources */,
 				79F48A05232D486E00C3D2C6 /* ListWorkCell.swift in Sources */,
 				79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */,
+				79F48A1C232D8A4A00C3D2C6 /* Routes.swift in Sources */,
 				793C05512328731A005CB294 /* Service.swift in Sources */,
+				79F48A19232D898A00C3D2C6 /* Job.swift in Sources */,
 				79F48A0E232D4E1E00C3D2C6 /* LayoutAnchor.swift in Sources */,
 				79F48A0C232D4E0200C3D2C6 /* LayoutAnchor+Operations.swift in Sources */,
 			);

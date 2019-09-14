@@ -19,17 +19,23 @@ class ListWorksController: UIViewController, ConfigurableUI {
     }
     
     fileprivate func setupComponents() {
-        (customView as? ListWorkView)?.tableView.delegate = self
-        (customView as? ListWorkView)?.tableView.dataSource = self
+        (customView as? ListWorkView)?.collectionView.delegate = self
+        (customView as? ListWorkView)?.collectionView.dataSource = self
+        navigationController?.navigationBar.barTintColor = .primaryColor
     }
 }
 
-extension ListWorksController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+extension ListWorksController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 8
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = (customView as? ListWorkView)?.collectionView.dequeueReusableCell(for: indexPath, cellType: ListWorkCell.self) else { return UICollectionViewCell() }
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return .init(width: view.frame.width - 20, height: 150)
     }
 }

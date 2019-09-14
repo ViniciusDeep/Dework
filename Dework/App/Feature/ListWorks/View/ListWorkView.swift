@@ -11,18 +11,19 @@ import UIKit
 class ListWorkView: UIView, ConfigurableUI {
     var customView: UIView? = nil
     
-    let tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.backgroundColor = .primaryColor
-        tableView.tableFooterView = UIView()
-        return tableView
+    let collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView.backgroundColor = .backgroundColor
+        collectionView.register(cellType: ListWorkCell.self)
+        collectionView.allowsSelection = false
+        return collectionView
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         buildViewHierarchy()
         setupConstraints()
-        self.backgroundColor = .primaryColor
+        self.backgroundColor = .white
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,10 +31,16 @@ class ListWorkView: UIView, ConfigurableUI {
     }
     
     func buildViewHierarchy() {
-        addSubviews([tableView])
+        addSubviews([collectionView])
     }
     
     func setupConstraints() {
-        tableView.cBuild(make: .fillSuperview)
+        collectionView.cBuild { (make) in
+            make.top.equal(to: topAnchor, offsetBy: 10)
+            make.leading.equal(to: leadingAnchor)
+            make.trailing.equal(to: trailingAnchor)
+            make.bottom.equal(to: bottomAnchor)
+        }
+        
     }
 }

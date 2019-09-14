@@ -12,8 +12,6 @@
 		793C052923287129005CB294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793C052823287129005CB294 /* Assets.xcassets */; };
 		793C052C23287129005CB294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793C052A23287129005CB294 /* LaunchScreen.storyboard */; };
 		793C053723287129005CB294 /* DeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C053623287129005CB294 /* DeworkTests.swift */; };
-		793C054B2328721C005CB294 /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C05492328721C005CB294 /* LayoutAnchor.swift */; };
-		793C054C2328721C005CB294 /* CBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C054A2328721C005CB294 /* CBuilder.swift */; };
 		793C054F2328724B005CB294 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C054E2328724B005CB294 /* MainCoordinator.swift */; };
 		793C05512328731A005CB294 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C05502328731A005CB294 /* Service.swift */; };
 		79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */; };
@@ -21,6 +19,12 @@
 		79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489FD232D316B00C3D2C6 /* Configurable.swift */; };
 		79F48A03232D332A00C3D2C6 /* ListWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A02232D332A00C3D2C6 /* ListWorkView.swift */; };
 		79F48A05232D486E00C3D2C6 /* ListWorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A04232D486E00C3D2C6 /* ListWorkCell.swift */; };
+		79F48A08232D4AF400C3D2C6 /* RoundableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A07232D4AF400C3D2C6 /* RoundableImage.swift */; };
+		79F48A0A232D4DD500C3D2C6 /* CBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A09232D4DD500C3D2C6 /* CBuilder.swift */; };
+		79F48A0C232D4E0200C3D2C6 /* LayoutAnchor+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A0B232D4E0200C3D2C6 /* LayoutAnchor+Operations.swift */; };
+		79F48A0E232D4E1E00C3D2C6 /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A0D232D4E1E00C3D2C6 /* LayoutAnchor.swift */; };
+		79F48A10232D4E4400C3D2C6 /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A0F232D4E4400C3D2C6 /* LayoutProperty.swift */; };
+		79F48A12232D4E5800C3D2C6 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A11232D4E5800C3D2C6 /* LayoutProxy.swift */; };
 		A35605FE35CA65469404FE05 /* Pods_DeworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1059F0ACC76444D11B395FB4 /* Pods_DeworkTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,8 +51,6 @@
 		793C053223287129005CB294 /* DeworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		793C053623287129005CB294 /* DeworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeworkTests.swift; sourceTree = "<group>"; };
 		793C053823287129005CB294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		793C05492328721C005CB294 /* LayoutAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutAnchor.swift; path = ../../../../CBuilder/CBuilder/Source/LayoutAnchor.swift; sourceTree = "<group>"; };
-		793C054A2328721C005CB294 /* CBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CBuilder.swift; path = ../../../../CBuilder/CBuilder/Source/CBuilder.swift; sourceTree = "<group>"; };
 		793C054E2328724B005CB294 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		793C05502328731A005CB294 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorksController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,12 @@
 		79F489FD232D316B00C3D2C6 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		79F48A02232D332A00C3D2C6 /* ListWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorkView.swift; sourceTree = "<group>"; };
 		79F48A04232D486E00C3D2C6 /* ListWorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorkCell.swift; sourceTree = "<group>"; };
+		79F48A07232D4AF400C3D2C6 /* RoundableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundableImage.swift; sourceTree = "<group>"; };
+		79F48A09232D4DD500C3D2C6 /* CBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CBuilder.swift; path = Dework/ReusableLayer/View/CBuilder.swift; sourceTree = SOURCE_ROOT; };
+		79F48A0B232D4E0200C3D2C6 /* LayoutAnchor+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LayoutAnchor+Operations.swift"; path = "Dework/ReusableLayer/View/LayoutAnchor+Operations.swift"; sourceTree = SOURCE_ROOT; };
+		79F48A0D232D4E1E00C3D2C6 /* LayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutAnchor.swift; path = Dework/ReusableLayer/View/LayoutAnchor.swift; sourceTree = SOURCE_ROOT; };
+		79F48A0F232D4E4400C3D2C6 /* LayoutProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutProperty.swift; path = Dework/ReusableLayer/View/LayoutProperty.swift; sourceTree = SOURCE_ROOT; };
+		79F48A11232D4E5800C3D2C6 /* LayoutProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Dework/ReusableLayer/View/LayoutProxy.swift; sourceTree = SOURCE_ROOT; };
 		B10A6042EC7B0A45218631B9 /* Pods-Dework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dework.release.xcconfig"; path = "Target Support Files/Pods-Dework/Pods-Dework.release.xcconfig"; sourceTree = "<group>"; };
 		F3549AF43CCBA6CB372E41AD /* Pods-DeworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeworkTests.release.xcconfig"; path = "Target Support Files/Pods-DeworkTests/Pods-DeworkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +180,7 @@
 		793C0544232871CE005CB294 /* ReusableLayer */ = {
 			isa = PBXGroup;
 			children = (
+				79F48A06232D4AB400C3D2C6 /* View */,
 				79F489FB232D315800C3D2C6 /* Protocol */,
 				79F489F8232D308000C3D2C6 /* Extension */,
 			);
@@ -197,8 +206,11 @@
 		793C054823287206005CB294 /* CBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				793C054A2328721C005CB294 /* CBuilder.swift */,
-				793C05492328721C005CB294 /* LayoutAnchor.swift */,
+				79F48A09232D4DD500C3D2C6 /* CBuilder.swift */,
+				79F48A0B232D4E0200C3D2C6 /* LayoutAnchor+Operations.swift */,
+				79F48A0D232D4E1E00C3D2C6 /* LayoutAnchor.swift */,
+				79F48A0F232D4E4400C3D2C6 /* LayoutProperty.swift */,
+				79F48A11232D4E5800C3D2C6 /* LayoutProxy.swift */,
 			);
 			path = CBuilder;
 			sourceTree = "<group>";
@@ -267,6 +279,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79F48A06232D4AB400C3D2C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79F48A07232D4AF400C3D2C6 /* RoundableImage.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,15 +475,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				793C054F2328724B005CB294 /* MainCoordinator.swift in Sources */,
-				793C054B2328721C005CB294 /* LayoutAnchor.swift in Sources */,
+				79F48A10232D4E4400C3D2C6 /* LayoutProperty.swift in Sources */,
 				79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */,
+				79F48A08232D4AF400C3D2C6 /* RoundableImage.swift in Sources */,
+				79F48A0A232D4DD500C3D2C6 /* CBuilder.swift in Sources */,
 				79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */,
 				793C052223287127005CB294 /* AppDelegate.swift in Sources */,
 				79F48A03232D332A00C3D2C6 /* ListWorkView.swift in Sources */,
+				79F48A12232D4E5800C3D2C6 /* LayoutProxy.swift in Sources */,
 				79F48A05232D486E00C3D2C6 /* ListWorkCell.swift in Sources */,
-				793C054C2328721C005CB294 /* CBuilder.swift in Sources */,
 				79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */,
 				793C05512328731A005CB294 /* Service.swift in Sources */,
+				79F48A0E232D4E1E00C3D2C6 /* LayoutAnchor.swift in Sources */,
+				79F48A0C232D4E0200C3D2C6 /* LayoutAnchor+Operations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

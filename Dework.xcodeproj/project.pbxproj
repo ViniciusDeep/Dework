@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68F26762687624A2FC027EC1 /* Pods_Dework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFC2B471A785E724B08A580 /* Pods_Dework.framework */; };
 		793C052223287127005CB294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C052123287127005CB294 /* AppDelegate.swift */; };
-		793C052423287127005CB294 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C052323287127005CB294 /* ViewController.swift */; };
 		793C052923287129005CB294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793C052823287129005CB294 /* Assets.xcassets */; };
 		793C052C23287129005CB294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793C052A23287129005CB294 /* LaunchScreen.storyboard */; };
 		793C053723287129005CB294 /* DeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C053623287129005CB294 /* DeworkTests.swift */; };
 		793C054B2328721C005CB294 /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C05492328721C005CB294 /* LayoutAnchor.swift */; };
 		793C054C2328721C005CB294 /* CBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C054A2328721C005CB294 /* CBuilder.swift */; };
-		793C054F2328724B005CB294 /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C054E2328724B005CB294 /* Constructor.swift */; };
+		793C054F2328724B005CB294 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C054E2328724B005CB294 /* MainCoordinator.swift */; };
 		793C05512328731A005CB294 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C05502328731A005CB294 /* Service.swift */; };
+		79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */; };
+		79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489F9232D30A000C3D2C6 /* ColorApp+Extension.swift */; };
+		79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489FD232D316B00C3D2C6 /* Configurable.swift */; };
+		79F48A03232D332A00C3D2C6 /* ListWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A02232D332A00C3D2C6 /* ListWorkView.swift */; };
+		79F48A05232D486E00C3D2C6 /* ListWorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A04232D486E00C3D2C6 /* ListWorkCell.swift */; };
+		A35605FE35CA65469404FE05 /* Pods_DeworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1059F0ACC76444D11B395FB4 /* Pods_DeworkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,9 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1059F0ACC76444D11B395FB4 /* Pods_DeworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F40669BAE0B57C627CAE83 /* Pods-DeworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeworkTests.debug.xcconfig"; path = "Target Support Files/Pods-DeworkTests/Pods-DeworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		38512BBAB77FCDF71B3A622D /* Pods-Dework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dework.debug.xcconfig"; path = "Target Support Files/Pods-Dework/Pods-Dework.debug.xcconfig"; sourceTree = "<group>"; };
+		3BFC2B471A785E724B08A580 /* Pods_Dework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		793C051E23287127005CB294 /* Dework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		793C052123287127005CB294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		793C052323287127005CB294 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		793C052823287129005CB294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		793C052B23287129005CB294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		793C052D23287129005CB294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,8 +49,15 @@
 		793C053823287129005CB294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		793C05492328721C005CB294 /* LayoutAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutAnchor.swift; path = ../../../../CBuilder/CBuilder/Source/LayoutAnchor.swift; sourceTree = "<group>"; };
 		793C054A2328721C005CB294 /* CBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CBuilder.swift; path = ../../../../CBuilder/CBuilder/Source/CBuilder.swift; sourceTree = "<group>"; };
-		793C054E2328724B005CB294 /* Constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constructor.swift; sourceTree = "<group>"; };
+		793C054E2328724B005CB294 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		793C05502328731A005CB294 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorksController.swift; sourceTree = "<group>"; };
+		79F489F9232D30A000C3D2C6 /* ColorApp+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorApp+Extension.swift"; sourceTree = "<group>"; };
+		79F489FD232D316B00C3D2C6 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		79F48A02232D332A00C3D2C6 /* ListWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorkView.swift; sourceTree = "<group>"; };
+		79F48A04232D486E00C3D2C6 /* ListWorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorkCell.swift; sourceTree = "<group>"; };
+		B10A6042EC7B0A45218631B9 /* Pods-Dework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dework.release.xcconfig"; path = "Target Support Files/Pods-Dework/Pods-Dework.release.xcconfig"; sourceTree = "<group>"; };
+		F3549AF43CCBA6CB372E41AD /* Pods-DeworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeworkTests.release.xcconfig"; path = "Target Support Files/Pods-DeworkTests/Pods-DeworkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F26762687624A2FC027EC1 /* Pods_Dework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +73,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35605FE35CA65469404FE05 /* Pods_DeworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361289C0B4838EF2C6490493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BFC2B471A785E724B08A580 /* Pods_Dework.framework */,
+				1059F0ACC76444D11B395FB4 /* Pods_DeworkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36BBA00B6761CAC59DEE46C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38512BBAB77FCDF71B3A622D /* Pods-Dework.debug.xcconfig */,
+				B10A6042EC7B0A45218631B9 /* Pods-Dework.release.xcconfig */,
+				24F40669BAE0B57C627CAE83 /* Pods-DeworkTests.debug.xcconfig */,
+				F3549AF43CCBA6CB372E41AD /* Pods-DeworkTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		793C051523287127005CB294 = {
 			isa = PBXGroup;
 			children = (
 				793C052023287127005CB294 /* Dework */,
 				793C053523287129005CB294 /* DeworkTests */,
 				793C051F23287127005CB294 /* Products */,
+				36BBA00B6761CAC59DEE46C0 /* Pods */,
+				361289C0B4838EF2C6490493 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,7 +146,7 @@
 		793C0541232871AF005CB294 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				793C0543232871BF005CB294 /* Constructor */,
+				793C0543232871BF005CB294 /* Coordinator */,
 				793C0542232871BA005CB294 /* Feature */,
 			);
 			path = App;
@@ -115,23 +155,25 @@
 		793C0542232871BA005CB294 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				793C052323287127005CB294 /* ViewController.swift */,
+				79F489F5232D2F5B00C3D2C6 /* ListWorks */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		793C0543232871BF005CB294 /* Constructor */ = {
+		793C0543232871BF005CB294 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				793C052123287127005CB294 /* AppDelegate.swift */,
-				793C054E2328724B005CB294 /* Constructor.swift */,
+				793C054E2328724B005CB294 /* MainCoordinator.swift */,
 			);
-			path = Constructor;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		793C0544232871CE005CB294 /* ReusableLayer */ = {
 			isa = PBXGroup;
 			children = (
+				79F489FB232D315800C3D2C6 /* Protocol */,
+				79F489F8232D308000C3D2C6 /* Extension */,
 			);
 			path = ReusableLayer;
 			sourceTree = "<group>";
@@ -169,6 +211,64 @@
 			path = Providey;
 			sourceTree = "<group>";
 		};
+		79F489F5232D2F5B00C3D2C6 /* ListWorks */ = {
+			isa = PBXGroup;
+			children = (
+				79F48A01232D330E00C3D2C6 /* ViewModel */,
+				79F48A00232D330A00C3D2C6 /* View */,
+				79F489FF232D330500C3D2C6 /* Controller */,
+			);
+			path = ListWorks;
+			sourceTree = "<group>";
+		};
+		79F489F8232D308000C3D2C6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79F489F9232D30A000C3D2C6 /* ColorApp+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		79F489FB232D315800C3D2C6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				79F489FC232D316100C3D2C6 /* Configurables */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		79F489FC232D316100C3D2C6 /* Configurables */ = {
+			isa = PBXGroup;
+			children = (
+				79F489FD232D316B00C3D2C6 /* Configurable.swift */,
+			);
+			path = Configurables;
+			sourceTree = "<group>";
+		};
+		79F489FF232D330500C3D2C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79F48A00232D330A00C3D2C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79F48A02232D332A00C3D2C6 /* ListWorkView.swift */,
+				79F48A04232D486E00C3D2C6 /* ListWorkCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79F48A01232D330E00C3D2C6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 793C053B23287129005CB294 /* Build configuration list for PBXNativeTarget "Dework" */;
 			buildPhases = (
+				171F929E13B51033BBC8D7C0 /* [CP] Check Pods Manifest.lock */,
 				793C051A23287127005CB294 /* Sources */,
 				793C051B23287127005CB294 /* Frameworks */,
 				793C051C23287127005CB294 /* Resources */,
+				C89C3A84A44DC1D2E0FDCA14 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 793C053E23287129005CB294 /* Build configuration list for PBXNativeTarget "DeworkTests" */;
 			buildPhases = (
+				CCB1F5374AAC6E18BEACF795 /* [CP] Check Pods Manifest.lock */,
 				793C052E23287129005CB294 /* Sources */,
 				793C052F23287129005CB294 /* Frameworks */,
 				793C053023287129005CB294 /* Resources */,
+				8A35D8143828A2148912F12F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,16 +368,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		171F929E13B51033BBC8D7C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A35D8143828A2148912F12F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeworkTests/Pods-DeworkTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeworkTests/Pods-DeworkTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeworkTests/Pods-DeworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C89C3A84A44DC1D2E0FDCA14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dework/Pods-Dework-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dework/Pods-Dework-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dework/Pods-Dework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB1F5374AAC6E18BEACF795 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		793C051A23287127005CB294 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793C054F2328724B005CB294 /* Constructor.swift in Sources */,
-				793C052423287127005CB294 /* ViewController.swift in Sources */,
+				793C054F2328724B005CB294 /* MainCoordinator.swift in Sources */,
 				793C054B2328721C005CB294 /* LayoutAnchor.swift in Sources */,
+				79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */,
+				79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */,
 				793C052223287127005CB294 /* AppDelegate.swift in Sources */,
+				79F48A03232D332A00C3D2C6 /* ListWorkView.swift in Sources */,
+				79F48A05232D486E00C3D2C6 /* ListWorkCell.swift in Sources */,
 				793C054C2328721C005CB294 /* CBuilder.swift in Sources */,
+				79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */,
 				793C05512328731A005CB294 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +615,7 @@
 		};
 		793C053C23287129005CB294 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38512BBAB77FCDF71B3A622D /* Pods-Dework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -444,6 +634,7 @@
 		};
 		793C053D23287129005CB294 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B10A6042EC7B0A45218631B9 /* Pods-Dework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +653,7 @@
 		};
 		793C053F23287129005CB294 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F40669BAE0B57C627CAE83 /* Pods-DeworkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -483,6 +675,7 @@
 		};
 		793C054023287129005CB294 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3549AF43CCBA6CB372E41AD /* Pods-DeworkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -34,7 +34,6 @@ class ListWorksController: UIViewController, ConfigurableUI {
             }
         }
     }
-    
 }
 
 extension ListWorksController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -50,5 +49,8 @@ extension ListWorksController: UICollectionViewDelegate, UICollectionViewDataSou
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: view.frame.width - 20, height: 150)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .init(top: 5, left: 0, bottom: 0, right: 0)
     }
 }

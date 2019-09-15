@@ -10,12 +10,14 @@ target 'Dework' do
   pod 'RxCocoa', '~> 5'
   pod 'Reusable'
   pod 'Markdowner'
+  pod 'SDWebImage', '~> 5.0'
 
   target 'DeworkTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'RxBlocking', '~> 5'
     pod 'RxTest', '~> 5'
+    pod 'SDWebImage', '~> 5.0'
   end
 
 end

@@ -27,11 +27,11 @@ class InsideJobView: UIView, ConfigurableUI {
         return textView
     }()
     
+   
     override init(frame: CGRect) {
         super.init(frame: frame)
         buildViewHierarchy()
         setupConstraints()
-        self.backgroundColor = .primaryColor
     }
     
     required init?(coder aDecoder: NSCoder) {

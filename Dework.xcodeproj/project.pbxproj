@@ -197,6 +197,7 @@
 		793C0544232871CE005CB294 /* ReusableLayer */ = {
 			isa = PBXGroup;
 			children = (
+				7940822A232DAC3B0060D8FB /* ViewModel */,
 				79F48A06232D4AB400C3D2C6 /* View */,
 				79F489FB232D315800C3D2C6 /* Protocol */,
 				79F489F8232D308000C3D2C6 /* Extension */,
@@ -271,6 +272,13 @@
 			isa = PBXGroup;
 			children = (
 				79408228232D9D560060D8FB /* InsideJobViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7940822A232DAC3B0060D8FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = ViewModel;
 			sourceTree = "<group>";

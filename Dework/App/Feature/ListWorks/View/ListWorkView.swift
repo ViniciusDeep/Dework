@@ -16,6 +16,7 @@ class ListWorkView: UIView, ConfigurableUI {
         collectionView.backgroundColor = .backgroundColor
         collectionView.register(cellType: ListWorkCell.self)
         collectionView.allowsSelection = false
+        collectionView.layer.cornerRadius = 16
         return collectionView
     }()
     
@@ -36,11 +37,10 @@ class ListWorkView: UIView, ConfigurableUI {
     
     func setupConstraints() {
         collectionView.cBuild { (make) in
-            make.top.equal(to: topAnchor, offsetBy: 10)
+            make.top.equal(to: self.safeAreaLayoutGuide.topAnchor)
             make.leading.equal(to: leadingAnchor)
             make.trailing.equal(to: trailingAnchor)
-            make.bottom.equal(to: bottomAnchor)
+            make.bottom.equal(to: self.safeAreaLayoutGuide.bottomAnchor)
         }
-        
     }
 }

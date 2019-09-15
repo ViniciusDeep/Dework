@@ -8,6 +8,7 @@
 
 import UIKit
 import Reusable
+import SDWebImage
 
 class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
     var customView: UIView? = nil
@@ -27,6 +28,14 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
        return label
     }()
     
+    let recruiterJob: UILabel = {
+        let label = UILabel()
+        label.text = "Aline Borges"
+        label.textColor = .white
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        return label
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,6 +43,11 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
         setupConstraints()
         self.backgroundColor = .primaryColor
         self.layer.cornerRadius = 16
+        
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        self.layer.shadowRadius = 3.0
+        self.layer.shadowOpacity = 0.5
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -41,7 +55,7 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
     }
     
     func buildViewHierarchy() {
-        addSubviews([imageJob, nameJob])
+        addSubviews([imageJob, nameJob, recruiterJob])
     }
     
     func setupConstraints() {
@@ -57,9 +71,19 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
             make.leading.equal(to: imageJob.trailingAnchor, offsetBy: 10)
             make.trailing.equal(to: trailingAnchor, offsetBy: -10)
         }
+        
+        recruiterJob.cBuild { (make) in
+            make.top.equal(to: nameJob.bottomAnchor, offsetBy: 10)
+            make.leading.equal(to: nameJob.leadingAnchor)
+            make.trailing.equal(to: nameJob.trailingAnchor)
+        }
+        
     }
     
     func setup(viewModel: ListWorksCellViewModel) {
         nameJob.text = viewModel.job?.title
+        recruiterJob.text = "Recruiter: @\(viewModel.job?.user.username ?? "")"
+        guard let imageUrl = viewModel.job?.user.avatarUrl else {return}
+        imageJob.sd_setImage(with: URL(string: imageUrl))
     }
 }

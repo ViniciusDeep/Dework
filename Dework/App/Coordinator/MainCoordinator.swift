@@ -21,7 +21,7 @@ struct Constructor: ConfigurableConstructor {
     
     mutating func setupConstructor() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let navigation = UINavigationController(rootViewController: InsideJobController())
+        let navigation = UINavigationController(rootViewController: ListWorksController())
         navigation.navigationBar.isTranslucent = false
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()

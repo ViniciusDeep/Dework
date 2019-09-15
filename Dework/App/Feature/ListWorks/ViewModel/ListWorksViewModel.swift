@@ -41,7 +41,7 @@ class ListWorksViewModel {
         if index < self.worksCellViewModel.count {
             return self.worksCellViewModel[index]
         }
-        return ListWorksCellViewModel(Job(url: "", title: "", body: ""))
+        return ListWorksCellViewModel(Job(url: "", title: "", body: "", user: User(avatarUrl: "", username: "")))
     }
 }
 

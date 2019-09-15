@@ -23,7 +23,8 @@ class InsideJobView: UIView, ConfigurableUI {
     lazy var jobTextView: UITextView = {
         let textView = UITextView()
         textView.isEditable = false
-        textView.backgroundColor = .primaryColor
+        textView.backgroundColor = .backgroundColor
+        textView.layer.cornerRadius = 16
         return textView
     }()
     
@@ -43,7 +44,12 @@ class InsideJobView: UIView, ConfigurableUI {
     }
     
     func setupConstraints() {
-        jobTextView.cBuild(make: .fillSuperview)
+        jobTextView.cBuild { (make) in
+            make.top.equal(to: topAnchor, offsetBy: 20)
+            make.leading.equal(to: leadingAnchor, offsetBy: 10)
+            make.trailing.equal(to: trailingAnchor, offsetBy: -10)
+            make.bottom.equal(to: bottomAnchor, offsetBy: 20)
+        }
     }
     
     
@@ -59,7 +65,7 @@ extension MarkdownTextView {
         self.backgroundColor = .clear
         self.setStyleConfigurationWith(
             font: UIFont.systemFont(ofSize: size),
-            textColor: .white,
+            textColor: .foregroundColor,
             symbolsColor: .lightGray)
     }
     

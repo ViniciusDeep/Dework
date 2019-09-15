@@ -43,6 +43,13 @@ class ListWorksViewModel {
         }
         return ListWorksCellViewModel(Job(url: "", title: "", body: "", user: User(avatarUrl: "", username: "")))
     }
+    
+    public func getJob(forIndex index: Int) -> Job {
+        let cellVM = cellViewModel(forIndex: index)
+        return cellVM.job ?? Job(url: "", title: "", body: "", user: User(avatarUrl: "", username: ""))
+        
+    }
+    
 }
 
 

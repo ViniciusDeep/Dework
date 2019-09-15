@@ -15,7 +15,6 @@ class ListWorkView: UIView, ConfigurableUI {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.backgroundColor = .backgroundColor
         collectionView.register(cellType: ListWorkCell.self)
-        collectionView.allowsSelection = false
         collectionView.layer.cornerRadius = 16
         return collectionView
     }()

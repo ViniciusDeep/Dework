@@ -11,10 +11,23 @@ import UIKit
 class InsideJobController: UIViewController, ConfigurableUI {
     var customView: UIView? = InsideJobView()
     
+    var insideJobViewModel = InsideJobViewModel(job: Job(url: "", title: "", body: "### Swift", user: User(avatarUrl: "", username: "")))
+    
+    convenience init(_ job: Job) {
+        self.init()
+        insideJobViewModel = InsideJobViewModel(job: job)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        bindViewModel()
+        self.view.backgroundColor = .foregroundColor
+        navigationController?.navigationBar.tintColor = .backgroundColor
     }
     
+    fileprivate func bindViewModel() {
+        (customView as? InsideJobView)?.insideJobViewModel = self.insideJobViewModel
+    }
     
 }

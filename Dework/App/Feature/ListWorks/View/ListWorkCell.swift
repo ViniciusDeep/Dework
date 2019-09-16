@@ -21,7 +21,6 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
     
     let nameJob: UILabel = {
        let label = UILabel()
-       label.text = "Instituto Antlântico"
        label.textColor = .white
        label.numberOfLines = 0
        label.lineBreakMode = .byWordWrapping
@@ -30,7 +29,6 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
     
     let recruiterJob: UILabel = {
         let label = UILabel()
-        label.text = "Aline Borges"
         label.textColor = .white
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping

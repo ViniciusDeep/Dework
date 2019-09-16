@@ -11,6 +11,8 @@ import UIKit
 class ListWorkView: UIView, ConfigurableUI {
     var customView: UIView?
     
+    let listTagsViewModel = ListTagsViewModel()
+    
     lazy var tagsCollectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.backgroundColor = .primaryColor
@@ -47,6 +49,7 @@ class ListWorkView: UIView, ConfigurableUI {
     func setupConstraints() {
         if let layout = tagsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
+            layout.estimatedItemSize = CGSize(width: 100, height: 100)
         }
         
         tagsCollectionView.cBuild { (make) in
@@ -67,11 +70,17 @@ class ListWorkView: UIView, ConfigurableUI {
 
 extension ListWorkView: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return listTagsViewModel.numberOfRows()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: ListTagsCell.self)
+        let cellVM = listTagsViewModel.cellViewModel(forIndex: indexPath.row)
+        cell.setup(withViewModel: cellVM)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Stack")
     }
 }

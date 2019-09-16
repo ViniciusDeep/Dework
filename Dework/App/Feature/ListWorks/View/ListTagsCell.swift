@@ -19,19 +19,36 @@ class ListTagsCell: UICollectionViewCell, ConfigurableUI, Reusable {
        return view
     }()
     
+    let tagStack: UILabel = {
+        let label = UILabel()
+        label.text = "Swift"
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.textColor = .primaryColor
+        return label
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         buildViewHierarchy()
         setupConstraints()
+        setupShadow()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    fileprivate func setupShadow() {
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        self.layer.shadowRadius = 3.0
+        self.layer.shadowOpacity = 0.5
+    }
+    
     func buildViewHierarchy() {
        addSubviews([boxView])
+       boxView.addSubview(tagStack)
     }
     
     func setupConstraints() {
@@ -41,5 +58,13 @@ class ListTagsCell: UICollectionViewCell, ConfigurableUI, Reusable {
             make.trailing.equal(to: trailingAnchor, offsetBy: -5)
             make.bottom.equal(to: bottomAnchor, offsetBy: -5)
         }
+        tagStack.cBuild(make: .centerInSuperView)
     }
+    
+    func setup(withViewModel viewModel: ListTagCellViewModel) {
+        tagStack.text = viewModel.dogTag?.name
+
+        boxView.backgroundColor = UIColor(named: "white")
+    }
+    
 }

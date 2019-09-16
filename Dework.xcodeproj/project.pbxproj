@@ -20,6 +20,9 @@
 		79A8F534232EADED00E15253 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8F533232EADED00E15253 /* CustomTabBarController.swift */; };
 		79B96F17232F0366001E697C /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F16232F0366001E697C /* Job.swift */; };
 		79B96F19232FD6F9001E697C /* ListTagsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F18232FD6F9001E697C /* ListTagsCell.swift */; };
+		79B96F1B232FEACB001E697C /* ListTagsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F1A232FEACB001E697C /* ListTagsViewModel.swift */; };
+		79B96F1D233003E4001E697C /* ListTagCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F1C233003E4001E697C /* ListTagCellViewModel.swift */; };
+		79B96F1F233008BE001E697C /* DogTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F1E233008BE001E697C /* DogTag.swift */; };
 		79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */; };
 		79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489F9232D30A000C3D2C6 /* ColorApp+Extension.swift */; };
 		79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489FD232D316B00C3D2C6 /* Configurable.swift */; };
@@ -69,6 +72,9 @@
 		79A8F533232EADED00E15253 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		79B96F16232F0366001E697C /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		79B96F18232FD6F9001E697C /* ListTagsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTagsCell.swift; sourceTree = "<group>"; };
+		79B96F1A232FEACB001E697C /* ListTagsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTagsViewModel.swift; sourceTree = "<group>"; };
+		79B96F1C233003E4001E697C /* ListTagCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTagCellViewModel.swift; sourceTree = "<group>"; };
+		79B96F1E233008BE001E697C /* DogTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTag.swift; sourceTree = "<group>"; };
 		79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorksController.swift; sourceTree = "<group>"; };
 		79F489F9232D30A000C3D2C6 /* ColorApp+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorApp+Extension.swift"; sourceTree = "<group>"; };
 		79F489FD232D316B00C3D2C6 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
@@ -284,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				79B96F16232F0366001E697C /* Job.swift */,
+				79B96F1E233008BE001E697C /* DogTag.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -335,8 +342,8 @@
 			isa = PBXGroup;
 			children = (
 				79F48A02232D332A00C3D2C6 /* ListWorkView.swift */,
-				79F48A04232D486E00C3D2C6 /* ListWorkCell.swift */,
 				79B96F18232FD6F9001E697C /* ListTagsCell.swift */,
+				79F48A04232D486E00C3D2C6 /* ListWorkCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -346,6 +353,8 @@
 			children = (
 				79F48A16232D848D00C3D2C6 /* ListWorksViewModel.swift */,
 				79F48A1D232D90DA00C3D2C6 /* ListWorksCellViewModel.swift */,
+				79B96F1A232FEACB001E697C /* ListTagsViewModel.swift */,
+				79B96F1C233003E4001E697C /* ListTagCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -553,12 +562,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				793C054F2328724B005CB294 /* MainCoordinator.swift in Sources */,
+				79B96F1D233003E4001E697C /* ListTagCellViewModel.swift in Sources */,
 				79B96F17232F0366001E697C /* Job.swift in Sources */,
 				79F48A17232D848D00C3D2C6 /* ListWorksViewModel.swift in Sources */,
 				79F48A10232D4E4400C3D2C6 /* LayoutProperty.swift in Sources */,
 				79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */,
 				79F48A08232D4AF400C3D2C6 /* RoundableImage.swift in Sources */,
 				79F48A0A232D4DD500C3D2C6 /* CBuilder.swift in Sources */,
+				79B96F1F233008BE001E697C /* DogTag.swift in Sources */,
 				79408226232D9B910060D8FB /* InsideJobView.swift in Sources */,
 				79B96F19232FD6F9001E697C /* ListTagsCell.swift in Sources */,
 				79F48A1E232D90DA00C3D2C6 /* ListWorksCellViewModel.swift in Sources */,
@@ -570,6 +581,7 @@
 				79F48A12232D4E5800C3D2C6 /* LayoutProxy.swift in Sources */,
 				79F48A05232D486E00C3D2C6 /* ListWorkCell.swift in Sources */,
 				79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */,
+				79B96F1B232FEACB001E697C /* ListTagsViewModel.swift in Sources */,
 				79F48A1C232D8A4A00C3D2C6 /* Routes.swift in Sources */,
 				79408224232D9A220060D8FB /* InsideJobController.swift in Sources */,
 				793C05512328731A005CB294 /* Service.swift in Sources */,

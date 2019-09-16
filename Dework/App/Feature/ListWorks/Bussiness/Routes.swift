@@ -39,3 +39,12 @@ extension Routes {
         return "\(baseUrl)vuejs-br/vagas/issues"
     }
 }
+
+enum Stack: CaseIterable{
+    case iOS
+    case BackEnd
+    case FrontEnd
+    case VueJS
+    case React
+    case Java
+}

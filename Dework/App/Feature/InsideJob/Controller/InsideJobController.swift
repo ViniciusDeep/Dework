@@ -24,6 +24,7 @@ class InsideJobController: UIViewController, ConfigurableUI {
         bindViewModel()
         self.view.backgroundColor = .foregroundColor
         navigationController?.navigationBar.tintColor = .backgroundColor
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     fileprivate func bindViewModel() {

@@ -14,8 +14,8 @@ class ListWorksController: UIViewController, ConfigurableUI {
     
     var viewModel = ListWorksViewModel()
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         setupView()
         setupComponents()
         bindViewModel()
@@ -24,7 +24,7 @@ class ListWorksController: UIViewController, ConfigurableUI {
     fileprivate func setupComponents() {
         (customView as? ListWorkView)?.collectionView.delegate = self
         (customView as? ListWorkView)?.collectionView.dataSource = self
-        navigationController?.navigationBar.barTintColor = .primaryColor
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     fileprivate func bindViewModel() {
@@ -51,7 +51,7 @@ extension ListWorksController: UICollectionViewDelegate, UICollectionViewDataSou
         return .init(width: view.frame.width - 20, height: 150)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return .init(top: 5, left: 0, bottom: 0, right: 0)
+        return .init(top: 5, left: 0, bottom: 5, right: 0)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

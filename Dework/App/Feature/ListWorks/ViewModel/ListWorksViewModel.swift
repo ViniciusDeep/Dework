@@ -14,7 +14,6 @@ class ListWorksViewModel {
     var updateList: updateClosure?
     fileprivate var repository = JobsRepository()
     
-    
     fileprivate var worksCellViewModel: [ListWorksCellViewModel] = [] {
         didSet {
             DispatchQueue.main.async {
@@ -47,9 +46,7 @@ class ListWorksViewModel {
     public func getJob(forIndex index: Int) -> Job {
         let cellVM = cellViewModel(forIndex: index)
         return cellVM.job ?? Job(url: "", title: "", body: "", user: User(avatarUrl: "", username: ""))
-        
     }
-    
 }
 
 

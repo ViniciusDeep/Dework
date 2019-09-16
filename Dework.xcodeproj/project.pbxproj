@@ -17,6 +17,9 @@
 		79408224232D9A220060D8FB /* InsideJobController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79408223232D9A220060D8FB /* InsideJobController.swift */; };
 		79408226232D9B910060D8FB /* InsideJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79408225232D9B910060D8FB /* InsideJobView.swift */; };
 		79408229232D9D560060D8FB /* InsideJobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79408228232D9D560060D8FB /* InsideJobViewModel.swift */; };
+		79A8F534232EADED00E15253 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8F533232EADED00E15253 /* CustomTabBarController.swift */; };
+		79B96F17232F0366001E697C /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F16232F0366001E697C /* Job.swift */; };
+		79B96F19232FD6F9001E697C /* ListTagsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F18232FD6F9001E697C /* ListTagsCell.swift */; };
 		79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */; };
 		79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489F9232D30A000C3D2C6 /* ColorApp+Extension.swift */; };
 		79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489FD232D316B00C3D2C6 /* Configurable.swift */; };
@@ -30,7 +33,6 @@
 		79F48A12232D4E5800C3D2C6 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A11232D4E5800C3D2C6 /* LayoutProxy.swift */; };
 		79F48A15232D732300C3D2C6 /* JobsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A14232D732300C3D2C6 /* JobsRepository.swift */; };
 		79F48A17232D848D00C3D2C6 /* ListWorksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A16232D848D00C3D2C6 /* ListWorksViewModel.swift */; };
-		79F48A19232D898A00C3D2C6 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A18232D898A00C3D2C6 /* Job.swift */; };
 		79F48A1C232D8A4A00C3D2C6 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A1B232D8A4A00C3D2C6 /* Routes.swift */; };
 		79F48A1E232D90DA00C3D2C6 /* ListWorksCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48A1D232D90DA00C3D2C6 /* ListWorksCellViewModel.swift */; };
 		A35605FE35CA65469404FE05 /* Pods_DeworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1059F0ACC76444D11B395FB4 /* Pods_DeworkTests.framework */; };
@@ -64,6 +66,9 @@
 		79408223232D9A220060D8FB /* InsideJobController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideJobController.swift; sourceTree = "<group>"; };
 		79408225232D9B910060D8FB /* InsideJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideJobView.swift; sourceTree = "<group>"; };
 		79408228232D9D560060D8FB /* InsideJobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideJobViewModel.swift; sourceTree = "<group>"; };
+		79A8F533232EADED00E15253 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		79B96F16232F0366001E697C /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		79B96F18232FD6F9001E697C /* ListTagsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTagsCell.swift; sourceTree = "<group>"; };
 		79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorksController.swift; sourceTree = "<group>"; };
 		79F489F9232D30A000C3D2C6 /* ColorApp+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorApp+Extension.swift"; sourceTree = "<group>"; };
 		79F489FD232D316B00C3D2C6 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
@@ -77,7 +82,6 @@
 		79F48A11232D4E5800C3D2C6 /* LayoutProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Dework/ReusableLayer/View/LayoutProxy.swift; sourceTree = SOURCE_ROOT; };
 		79F48A14232D732300C3D2C6 /* JobsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsRepository.swift; sourceTree = "<group>"; };
 		79F48A16232D848D00C3D2C6 /* ListWorksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorksViewModel.swift; sourceTree = "<group>"; };
-		79F48A18232D898A00C3D2C6 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Job.swift; path = Dework/App/Feature/ListWorks/ViewModel/Job.swift; sourceTree = SOURCE_ROOT; };
 		79F48A1B232D8A4A00C3D2C6 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		79F48A1D232D90DA00C3D2C6 /* ListWorksCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorksCellViewModel.swift; sourceTree = "<group>"; };
 		B10A6042EC7B0A45218631B9 /* Pods-Dework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dework.release.xcconfig"; path = "Target Support Files/Pods-Dework/Pods-Dework.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,8 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				793C0541232871AF005CB294 /* App */,
-				793C0546232871E0005CB294 /* Entities */,
 				793C0545232871D4005CB294 /* Plugins */,
+				79B96F15232F0354001E697C /* Entities */,
 				793C0544232871CE005CB294 /* ReusableLayer */,
 				793C052823287129005CB294 /* Assets.xcassets */,
 				793C052A23287129005CB294 /* LaunchScreen.storyboard */,
@@ -190,6 +194,7 @@
 			children = (
 				793C052123287127005CB294 /* AppDelegate.swift */,
 				793C054E2328724B005CB294 /* MainCoordinator.swift */,
+				79A8F533232EADED00E15253 /* CustomTabBarController.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -212,14 +217,6 @@
 				793C054823287206005CB294 /* CBuilder */,
 			);
 			path = Plugins;
-			sourceTree = "<group>";
-		};
-		793C0546232871E0005CB294 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				79F48A18232D898A00C3D2C6 /* Job.swift */,
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		793C054823287206005CB294 /* CBuilder */ = {
@@ -283,6 +280,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		79B96F15232F0354001E697C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				79B96F16232F0366001E697C /* Job.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		79F489F5232D2F5B00C3D2C6 /* ListWorks */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +336,7 @@
 			children = (
 				79F48A02232D332A00C3D2C6 /* ListWorkView.swift */,
 				79F48A04232D486E00C3D2C6 /* ListWorkCell.swift */,
+				79B96F18232FD6F9001E697C /* ListTagsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -547,16 +553,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				793C054F2328724B005CB294 /* MainCoordinator.swift in Sources */,
+				79B96F17232F0366001E697C /* Job.swift in Sources */,
 				79F48A17232D848D00C3D2C6 /* ListWorksViewModel.swift in Sources */,
 				79F48A10232D4E4400C3D2C6 /* LayoutProperty.swift in Sources */,
 				79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */,
 				79F48A08232D4AF400C3D2C6 /* RoundableImage.swift in Sources */,
 				79F48A0A232D4DD500C3D2C6 /* CBuilder.swift in Sources */,
 				79408226232D9B910060D8FB /* InsideJobView.swift in Sources */,
+				79B96F19232FD6F9001E697C /* ListTagsCell.swift in Sources */,
 				79F48A1E232D90DA00C3D2C6 /* ListWorksCellViewModel.swift in Sources */,
 				79F48A15232D732300C3D2C6 /* JobsRepository.swift in Sources */,
 				79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */,
 				793C052223287127005CB294 /* AppDelegate.swift in Sources */,
+				79A8F534232EADED00E15253 /* CustomTabBarController.swift in Sources */,
 				79F48A03232D332A00C3D2C6 /* ListWorkView.swift in Sources */,
 				79F48A12232D4E5800C3D2C6 /* LayoutProxy.swift in Sources */,
 				79F48A05232D486E00C3D2C6 /* ListWorkCell.swift in Sources */,
@@ -564,7 +573,6 @@
 				79F48A1C232D8A4A00C3D2C6 /* Routes.swift in Sources */,
 				79408224232D9A220060D8FB /* InsideJobController.swift in Sources */,
 				793C05512328731A005CB294 /* Service.swift in Sources */,
-				79F48A19232D898A00C3D2C6 /* Job.swift in Sources */,
 				79F48A0E232D4E1E00C3D2C6 /* LayoutAnchor.swift in Sources */,
 				79408229232D9D560060D8FB /* InsideJobViewModel.swift in Sources */,
 				79F48A0C232D4E0200C3D2C6 /* LayoutAnchor+Operations.swift in Sources */,

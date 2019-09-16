@@ -16,6 +16,7 @@ protocol ConfigurableUI {
 }
 
 extension ConfigurableUI where Self : UIViewController {
+    
     func setupView() {
         buildViewHierarchy()
         setupConstraints()

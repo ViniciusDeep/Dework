@@ -84,6 +84,6 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
         nameJob.text = viewModel.job?.title
         recruiterJob.text = "Recruiter: @\(viewModel.job?.user.username ?? "")"
         guard let imageUrl = viewModel.job?.user.avatarUrl else {return}
-        imageJob.sd_setImage(with: URL(string: imageUrl))
+        imageJob.sd_setImage(with: URL(string: imageUrl))        
     }
 }

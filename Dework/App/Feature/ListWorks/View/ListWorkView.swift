@@ -24,6 +24,7 @@ class ListWorkView: UIView, ConfigurableUI {
         collectionView.dataSource = self
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(cellType: ListTagsCell.self)
+        collectionView.isPagingEnabled = true
         return collectionView
     }()
     

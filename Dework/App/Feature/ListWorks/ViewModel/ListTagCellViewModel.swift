@@ -9,9 +9,7 @@
 import Foundation
 
 struct ListTagCellViewModel {
-    
     let dogTag: DogTag?
-    
     
     init(_ dogTag: DogTag) {
         self.dogTag = dogTag

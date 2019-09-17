@@ -10,8 +10,8 @@ import Foundation
 import RxSwift
 
 class JobsRepository {
-    func getJobs(completion: @escaping ([Job]) -> Void){
-        Service<[Job]>().get(url: Routes.iOS) { (result) in
+    func getJobs(route: String, completion: @escaping ([Job]) -> Void){
+        Service<[Job]>().get(url: route) { (result) in
             switch result {
             case .failure(_):
                 break

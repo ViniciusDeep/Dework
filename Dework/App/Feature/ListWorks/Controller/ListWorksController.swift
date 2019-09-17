@@ -11,7 +11,6 @@ import RxCocoa
 
 class ListWorksController: UIViewController, ConfigurableUI {
     var customView: UIView? = ListWorkView()
-    
     var viewModel = ListWorksViewModel()
     
     override func viewDidLoad() {
@@ -24,6 +23,7 @@ class ListWorksController: UIViewController, ConfigurableUI {
     fileprivate func setupComponents() {
         (customView as? ListWorkView)?.collectionView.delegate = self
         (customView as? ListWorkView)?.collectionView.dataSource = self
+        (customView as? ListWorkView)?.delegate = self
         navigationController?.navigationBar.shadowImage = UIImage()
     }
     
@@ -57,5 +57,13 @@ extension ListWorksController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         navigationController?.pushViewController(InsideJobController(viewModel.getJob(forIndex: indexPath.row)), animated: true)
     }
-    
+}
+
+extension ListWorksController: ListWorkViewDelegate {
+    func didSelectItem(atDogTag dogTag: DogTag) {
+        viewModel.fetchData(route: dogTag.route)
+        DispatchQueue.main.async {
+             (self.customView as? ListWorkView)?.collectionView.reloadData()
+        }
+    }
 }

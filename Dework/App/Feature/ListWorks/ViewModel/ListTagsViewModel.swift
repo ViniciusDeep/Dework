@@ -9,7 +9,7 @@
 import Foundation
 
 class ListTagsViewModel {
-    let dogTags = [DogTag(colorNamed: "Red", stack: .iOS, route: Routes.iOS), DogTag(colorNamed: "Red", stack: .BackEnd, route: Routes.backEnd),DogTag(colorNamed: "Red", stack: .FrontEnd, route: Routes.frontEnd),DogTag(colorNamed: "Red", stack: .React, route: Routes.react),DogTag(colorNamed: "Red", stack: .Java, route: Routes.java),DogTag(colorNamed: "Red", stack: .VueJS, route: Routes.vueJs),]
+    fileprivate let dogTags = [DogTag(colorNamed: "White", stack: .iOS, route: Routes.iOS), DogTag(colorNamed: "White", stack: .BackEnd, route: Routes.backEnd),DogTag(colorNamed: "White", stack: .FrontEnd, route: Routes.frontEnd),DogTag(colorNamed: "White", stack: .React, route: Routes.react),DogTag(colorNamed: "White", stack: .Java, route: Routes.java),DogTag(colorNamed: "White", stack: .VueJS, route: Routes.vueJs),]
     
     func numberOfRows() -> Int {
         return dogTags.count
@@ -17,5 +17,10 @@ class ListTagsViewModel {
     
     func cellViewModel(forIndex index: Int) -> ListTagCellViewModel {
         return ListTagCellViewModel(dogTags[index])
+    }
+    
+    func getStack(atIndex index: Int) -> DogTag {
+        let stack = dogTags[index]
+        return stack
     }
 }

@@ -58,7 +58,12 @@ class ListTagsCell: UICollectionViewCell, ConfigurableUI, Reusable {
             make.trailing.equal(to: trailingAnchor, offsetBy: -5)
             make.bottom.equal(to: bottomAnchor, offsetBy: -5)
         }
-        tagStack.cBuild(make: .centerInSuperView)
+        tagStack.cBuild(make: .centerYInSuperView)
+        
+        tagStack.cBuild { (make) in
+            make.leading.equal(to: leadingAnchor, offsetBy: 15)
+            make.trailing.equal(to: trailingAnchor, offsetBy: -15)
+        }
     }
     
     func setup(withViewModel viewModel: ListTagCellViewModel) {

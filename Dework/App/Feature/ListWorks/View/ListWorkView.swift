@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ListWorkViewDelegate: class {
+    func didSelectItem(atDogTag dogTag: DogTag)
+}
+
 class ListWorkView: UIView, ConfigurableUI {
     var customView: UIView?
     
@@ -27,9 +31,11 @@ class ListWorkView: UIView, ConfigurableUI {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.backgroundColor = .backgroundColor
         collectionView.register(cellType: ListWorkCell.self)
-        collectionView.layer.cornerRadius = 16
         return collectionView
     }()
+    
+    weak var delegate: ListWorkViewDelegate?
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -49,7 +55,7 @@ class ListWorkView: UIView, ConfigurableUI {
     func setupConstraints() {
         if let layout = tagsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
-            layout.estimatedItemSize = CGSize(width: 100, height: 100)
+           // layout.estimatedItemSize = CGSize(width: 100, height: 100)
         }
         
         tagsCollectionView.cBuild { (make) in
@@ -81,6 +87,16 @@ extension ListWorkView: UICollectionViewDelegateFlowLayout, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Stack")
+        self.didSelectItem(atDogTag: listTagsViewModel.getStack(atIndex: indexPath.row))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return .init(width: 100, height: 50)
+    }
+}
+
+extension ListWorkView {
+    func didSelectItem(atDogTag dogTag: DogTag) {
+        delegate?.didSelectItem(atDogTag: dogTag)
     }
 }

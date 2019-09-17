@@ -24,14 +24,14 @@ class ListWorksViewModel {
     
     public func numberOfRows() -> Int {
         if self.worksCellViewModel.count == 0 {
-            self.fetchData()
+            self.fetchData(route: Routes.iOS)
         }
         
         return self.worksCellViewModel.count
     }
     
-    fileprivate func fetchData() {
-        repository.getJobs(completion: {
+    public func fetchData(route: String) {
+        repository.getJobs(route: route, completion: {
             self.worksCellViewModel = $0.map({ListWorksCellViewModel($0)})
         })
     }

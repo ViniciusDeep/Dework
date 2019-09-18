@@ -26,30 +26,37 @@ class ListFavoriteController: UIViewController, ConfigurableUI {
     fileprivate func bindViewModel() {
         listFavoriteViewModel.updateList = {
             DispatchQueue.main.async {
-                 (self.customView as? ListFavoritesView)?.tableView.reloadData()
+                 (self.customView as? ListFavoritesView)?.collectionView.reloadData()
             }
         }
     }
     
     fileprivate func setupComponents() {
-        (customView as? ListFavoritesView)?.tableView.delegate = self
-        (customView as? ListFavoritesView)?.tableView.dataSource = self
+        (customView as? ListFavoritesView)?.collectionView.delegate = self
+        (customView as? ListFavoritesView)?.collectionView.dataSource = self
     }
 }
 
-extension ListFavoriteController: UITableViewDelegate, UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension ListFavoriteController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return listFavoriteViewModel.numberOfRows()
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: ListFavoritesCell.self)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: ListFavoritesCell.self)
         let cellVM = listFavoriteViewModel.cellViewModel(atIndex: indexPath.row)
         cell.setup(withViewModel: cellVM)
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return .init(width: view.frame.width - 20, height: 150)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .init(top: 5, left: 0, bottom: 5, right: 0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         navigationController?.pushViewController(InsideJobController(listFavoriteViewModel.didPerformFavoriteToJob(atIndex: indexPath)), animated: true)
     }
 }

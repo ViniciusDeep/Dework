@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		68F26762687624A2FC027EC1 /* Pods_Dework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFC2B471A785E724B08A580 /* Pods_Dework.framework */; };
+		7935A4F22332EEAB00214DCC /* ConfigurableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7935A4F12332EEAB00214DCC /* ConfigurableViewModel.swift */; };
 		793C052223287127005CB294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793C052123287127005CB294 /* AppDelegate.swift */; };
 		793C052923287129005CB294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793C052823287129005CB294 /* Assets.xcassets */; };
 		793C052C23287129005CB294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793C052A23287129005CB294 /* LaunchScreen.storyboard */; };
@@ -69,6 +70,7 @@
 		24F40669BAE0B57C627CAE83 /* Pods-DeworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeworkTests.debug.xcconfig"; path = "Target Support Files/Pods-DeworkTests/Pods-DeworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		38512BBAB77FCDF71B3A622D /* Pods-Dework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dework.debug.xcconfig"; path = "Target Support Files/Pods-Dework/Pods-Dework.debug.xcconfig"; sourceTree = "<group>"; };
 		3BFC2B471A785E724B08A580 /* Pods_Dework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7935A4F12332EEAB00214DCC /* ConfigurableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableViewModel.swift; sourceTree = "<group>"; };
 		793C051E23287127005CB294 /* Dework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		793C052123287127005CB294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		793C052823287129005CB294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 		7940822A232DAC3B0060D8FB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7935A4F12332EEAB00214DCC /* ConfigurableViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -663,6 +666,7 @@
 				799181C42331BFB700894A38 /* ConfigurableDao.swift in Sources */,
 				79F48A17232D848D00C3D2C6 /* ListWorksViewModel.swift in Sources */,
 				79F48A10232D4E4400C3D2C6 /* LayoutProperty.swift in Sources */,
+				7935A4F22332EEAB00214DCC /* ConfigurableViewModel.swift in Sources */,
 				79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */,
 				79B96F2123312151001E697C /* ListLabelCell.swift in Sources */,
 				799181C32331BFB700894A38 /* NSManagedObject+Extension.swift in Sources */,
@@ -850,7 +854,7 @@
 			baseConfigurationReference = 38512BBAB77FCDF71B3A622D /* Pods-Dework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6FYGZ29HL;
 				INFOPLIST_FILE = Dework/Info.plist;
@@ -871,7 +875,7 @@
 			baseConfigurationReference = B10A6042EC7B0A45218631B9 /* Pods-Dework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6FYGZ29HL;
 				INFOPLIST_FILE = Dework/Info.plist;

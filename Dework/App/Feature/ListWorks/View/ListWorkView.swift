@@ -56,7 +56,6 @@ class ListWorkView: UIView, ConfigurableUI {
     func setupConstraints() {
         if let layout = tagsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
-           // layout.estimatedItemSize = CGSize(width: 100, height: 100)
         }
         
         tagsCollectionView.cBuild { (make) in

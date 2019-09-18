@@ -8,17 +8,16 @@
 
 import RxSwift
 
-class ListWorksViewModel {
+class ListWorksViewModel: ConfigurableViewModel {
+    typealias Repository = JobsRepository
     
     typealias updateClosure = (() -> ())
     var updateList: updateClosure?
-    fileprivate var repository = JobsRepository()
+    fileprivate var repository = Repository()
     
     fileprivate var worksCellViewModel: [ListWorksCellViewModel] = [] {
         didSet {
-            DispatchQueue.main.async {
-                self.updateList?()
-            }
+            DispatchQueue.main.async {self.updateList?()}
         }
     }
     
@@ -26,7 +25,6 @@ class ListWorksViewModel {
         if self.worksCellViewModel.count == 0 {
             self.fetchData(route: Routes.iOS)
         }
-        
         return self.worksCellViewModel.count
     }
     

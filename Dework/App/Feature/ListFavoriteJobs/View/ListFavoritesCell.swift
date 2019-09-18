@@ -8,7 +8,7 @@
 
 import Reusable
 
-class ListFavoritesCell: UITableViewCell, Reusable, ConfigurableUI {
+class ListFavoritesCell: UICollectionViewCell, Reusable, ConfigurableUI {
     var customView: UIView?
     
     let jobTitle: UILabel = {
@@ -29,17 +29,24 @@ class ListFavoritesCell: UITableViewCell, Reusable, ConfigurableUI {
         return label
     }()
 
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         buildViewHierarchy()
         setupConstraints()
-        self.backgroundColor = .primaryColor
-        self.accessoryType = .disclosureIndicator
-        self.selectionStyle = .none
+        setupShadow()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    fileprivate func setupShadow() {
+        self.backgroundColor = .primaryColor
+        self.layer.cornerRadius = 16
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        self.layer.shadowRadius = 3.0
+        self.layer.shadowOpacity = 0.5
     }
 
     func buildViewHierarchy() {
@@ -62,6 +69,6 @@ class ListFavoritesCell: UITableViewCell, Reusable, ConfigurableUI {
     
     func setup(withViewModel viewModel: ListFavoriteCellViewModel) {
         jobTitle.text = viewModel.favoriteJob?.title
-        jobRecruiter.text = viewModel.favoriteJob?.publisher
+        jobRecruiter.text = "Publisher: @\(viewModel.favoriteJob?.publisher ?? "")"
     }
 }

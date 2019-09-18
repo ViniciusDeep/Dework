@@ -22,13 +22,25 @@ class InsideJobController: UIViewController, ConfigurableUI {
         super.viewDidLoad()
         setupView()
         bindViewModel()
+        setupNavigation()
         self.view.backgroundColor = .foregroundColor
+    }
+    
+    fileprivate func setupNavigation() {
         navigationController?.navigationBar.tintColor = .backgroundColor
         navigationController?.navigationBar.prefersLargeTitles = false
+        let starButton = UIBarButtonItem(image: UIImage(named: "unstar"), style: .done, target: self, action: #selector(saveJob))
+        navigationItem.rightBarButtonItem = starButton
     }
     
     fileprivate func bindViewModel() {
         (customView as? InsideJobView)?.insideJobViewModel = self.insideJobViewModel
+    }
+    
+    @objc fileprivate func saveJob() {
+        navigationItem.rightBarButtonItems?.forEach({ (button) in
+            button.image = UIImage(named: "star")
+        })
     }
     
 }

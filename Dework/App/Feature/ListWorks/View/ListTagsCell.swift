@@ -28,13 +28,19 @@ class ListTagsCell: UICollectionViewCell, ConfigurableUI, Reusable {
         return label
     }()
     
+    override var isSelected: Bool {
+        didSet {
+            boxView.backgroundColor = isSelected ? .orange : .white
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         buildViewHierarchy()
         setupConstraints()
         setupShadow()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -68,8 +74,6 @@ class ListTagsCell: UICollectionViewCell, ConfigurableUI, Reusable {
     
     func setup(withViewModel viewModel: ListTagCellViewModel) {
         tagStack.text = viewModel.dogTag?.name
-
         boxView.backgroundColor = UIColor(named: "white")
     }
-    
 }

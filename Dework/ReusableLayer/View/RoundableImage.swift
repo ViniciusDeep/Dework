@@ -21,9 +21,7 @@ class RoundableImage: UIImageView {
     override func layoutSubviews() {
         self.layer.masksToBounds = true
         self.layer.cornerRadius = self.frame.height/2
+        self.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+        self.layer.borderWidth = 2
     }
-    
-    
-    
-    
 }

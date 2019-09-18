@@ -17,12 +17,20 @@
 		79408224232D9A220060D8FB /* InsideJobController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79408223232D9A220060D8FB /* InsideJobController.swift */; };
 		79408226232D9B910060D8FB /* InsideJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79408225232D9B910060D8FB /* InsideJobView.swift */; };
 		79408229232D9D560060D8FB /* InsideJobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79408228232D9D560060D8FB /* InsideJobViewModel.swift */; };
+		799181B92331816700894A38 /* ListFavoriteJobsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181B82331816700894A38 /* ListFavoriteJobsController.swift */; };
+		799181BB2331840C00894A38 /* ListFavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181BA2331840C00894A38 /* ListFavoritesView.swift */; };
+		799181BD233188B800894A38 /* ListFavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181BC233188B800894A38 /* ListFavoritesCell.swift */; };
+		799181C32331BFB700894A38 /* NSManagedObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181BF2331BFB700894A38 /* NSManagedObject+Extension.swift */; };
+		799181C42331BFB700894A38 /* ConfigurableDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181C02331BFB700894A38 /* ConfigurableDao.swift */; };
+		799181C52331BFB700894A38 /* CoreDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181C12331BFB700894A38 /* CoreDao.swift */; };
+		799181C62331BFB700894A38 /* CoreStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181C22331BFB700894A38 /* CoreStack.swift */; };
 		79A8F534232EADED00E15253 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8F533232EADED00E15253 /* CustomTabBarController.swift */; };
 		79B96F17232F0366001E697C /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F16232F0366001E697C /* Job.swift */; };
 		79B96F19232FD6F9001E697C /* ListTagsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F18232FD6F9001E697C /* ListTagsCell.swift */; };
 		79B96F1B232FEACB001E697C /* ListTagsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F1A232FEACB001E697C /* ListTagsViewModel.swift */; };
 		79B96F1D233003E4001E697C /* ListTagCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F1C233003E4001E697C /* ListTagCellViewModel.swift */; };
 		79B96F1F233008BE001E697C /* DogTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F1E233008BE001E697C /* DogTag.swift */; };
+		79B96F2123312151001E697C /* ListLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F2023312151001E697C /* ListLabelCell.swift */; };
 		79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */; };
 		79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489F9232D30A000C3D2C6 /* ColorApp+Extension.swift */; };
 		79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F489FD232D316B00C3D2C6 /* Configurable.swift */; };
@@ -69,12 +77,20 @@
 		79408223232D9A220060D8FB /* InsideJobController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideJobController.swift; sourceTree = "<group>"; };
 		79408225232D9B910060D8FB /* InsideJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideJobView.swift; sourceTree = "<group>"; };
 		79408228232D9D560060D8FB /* InsideJobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideJobViewModel.swift; sourceTree = "<group>"; };
+		799181B82331816700894A38 /* ListFavoriteJobsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavoriteJobsController.swift; sourceTree = "<group>"; };
+		799181BA2331840C00894A38 /* ListFavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavoritesView.swift; sourceTree = "<group>"; };
+		799181BC233188B800894A38 /* ListFavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavoritesCell.swift; sourceTree = "<group>"; };
+		799181BF2331BFB700894A38 /* NSManagedObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Extension.swift"; path = "../../../../CoreDao/CoreDao/Source/NSManagedObject+Extension.swift"; sourceTree = "<group>"; };
+		799181C02331BFB700894A38 /* ConfigurableDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurableDao.swift; path = ../../../../CoreDao/CoreDao/Source/ConfigurableDao.swift; sourceTree = "<group>"; };
+		799181C12331BFB700894A38 /* CoreDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDao.swift; path = ../../../../CoreDao/CoreDao/Source/CoreDao.swift; sourceTree = "<group>"; };
+		799181C22331BFB700894A38 /* CoreStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreStack.swift; path = ../../../../CoreDao/CoreDao/Source/CoreStack.swift; sourceTree = "<group>"; };
 		79A8F533232EADED00E15253 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		79B96F16232F0366001E697C /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		79B96F18232FD6F9001E697C /* ListTagsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTagsCell.swift; sourceTree = "<group>"; };
 		79B96F1A232FEACB001E697C /* ListTagsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTagsViewModel.swift; sourceTree = "<group>"; };
 		79B96F1C233003E4001E697C /* ListTagCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTagCellViewModel.swift; sourceTree = "<group>"; };
 		79B96F1E233008BE001E697C /* DogTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTag.swift; sourceTree = "<group>"; };
+		79B96F2023312151001E697C /* ListLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLabelCell.swift; sourceTree = "<group>"; };
 		79F489F6232D2FA000C3D2C6 /* ListWorksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorksController.swift; sourceTree = "<group>"; };
 		79F489F9232D30A000C3D2C6 /* ColorApp+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorApp+Extension.swift"; sourceTree = "<group>"; };
 		79F489FD232D316B00C3D2C6 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
@@ -189,6 +205,7 @@
 		793C0542232871BA005CB294 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				79B96F2223314253001E697C /* ListFavoriteJobs */,
 				79408220232D9A050060D8FB /* InsideJob */,
 				79F489F5232D2F5B00C3D2C6 /* ListWorks */,
 			);
@@ -219,6 +236,7 @@
 		793C0545232871D4005CB294 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				799181BE2331BFA000894A38 /* CoreDao */,
 				793C054D23287229005CB294 /* Providey */,
 				793C054823287206005CB294 /* CBuilder */,
 			);
@@ -286,6 +304,41 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		799181B52331806000894A38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				799181B82331816700894A38 /* ListFavoriteJobsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		799181B62331806500894A38 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		799181B72331806D00894A38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				799181BA2331840C00894A38 /* ListFavoritesView.swift */,
+				799181BC233188B800894A38 /* ListFavoritesCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		799181BE2331BFA000894A38 /* CoreDao */ = {
+			isa = PBXGroup;
+			children = (
+				799181C02331BFB700894A38 /* ConfigurableDao.swift */,
+				799181C12331BFB700894A38 /* CoreDao.swift */,
+				799181C22331BFB700894A38 /* CoreStack.swift */,
+				799181BF2331BFB700894A38 /* NSManagedObject+Extension.swift */,
+			);
+			path = CoreDao;
+			sourceTree = "<group>";
+		};
 		79B96F15232F0354001E697C /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +346,16 @@
 				79B96F1E233008BE001E697C /* DogTag.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		79B96F2223314253001E697C /* ListFavoriteJobs */ = {
+			isa = PBXGroup;
+			children = (
+				799181B62331806500894A38 /* ViewModel */,
+				799181B72331806D00894A38 /* View */,
+				799181B52331806000894A38 /* Controller */,
+			);
+			path = ListFavoriteJobs;
 			sourceTree = "<group>";
 		};
 		79F489F5232D2F5B00C3D2C6 /* ListWorks */ = {
@@ -342,8 +405,9 @@
 			isa = PBXGroup;
 			children = (
 				79F48A02232D332A00C3D2C6 /* ListWorkView.swift */,
-				79B96F18232FD6F9001E697C /* ListTagsCell.swift */,
 				79F48A04232D486E00C3D2C6 /* ListWorkCell.swift */,
+				79B96F18232FD6F9001E697C /* ListTagsCell.swift */,
+				79B96F2023312151001E697C /* ListLabelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -564,9 +628,12 @@
 				793C054F2328724B005CB294 /* MainCoordinator.swift in Sources */,
 				79B96F1D233003E4001E697C /* ListTagCellViewModel.swift in Sources */,
 				79B96F17232F0366001E697C /* Job.swift in Sources */,
+				799181C42331BFB700894A38 /* ConfigurableDao.swift in Sources */,
 				79F48A17232D848D00C3D2C6 /* ListWorksViewModel.swift in Sources */,
 				79F48A10232D4E4400C3D2C6 /* LayoutProperty.swift in Sources */,
 				79F489FA232D30A000C3D2C6 /* ColorApp+Extension.swift in Sources */,
+				79B96F2123312151001E697C /* ListLabelCell.swift in Sources */,
+				799181C32331BFB700894A38 /* NSManagedObject+Extension.swift in Sources */,
 				79F48A08232D4AF400C3D2C6 /* RoundableImage.swift in Sources */,
 				79F48A0A232D4DD500C3D2C6 /* CBuilder.swift in Sources */,
 				79B96F1F233008BE001E697C /* DogTag.swift in Sources */,
@@ -576,14 +643,19 @@
 				79F48A15232D732300C3D2C6 /* JobsRepository.swift in Sources */,
 				79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */,
 				793C052223287127005CB294 /* AppDelegate.swift in Sources */,
+				799181B92331816700894A38 /* ListFavoriteJobsController.swift in Sources */,
 				79A8F534232EADED00E15253 /* CustomTabBarController.swift in Sources */,
 				79F48A03232D332A00C3D2C6 /* ListWorkView.swift in Sources */,
 				79F48A12232D4E5800C3D2C6 /* LayoutProxy.swift in Sources */,
+				799181BD233188B800894A38 /* ListFavoritesCell.swift in Sources */,
 				79F48A05232D486E00C3D2C6 /* ListWorkCell.swift in Sources */,
 				79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */,
+				799181BB2331840C00894A38 /* ListFavoritesView.swift in Sources */,
 				79B96F1B232FEACB001E697C /* ListTagsViewModel.swift in Sources */,
+				799181C62331BFB700894A38 /* CoreStack.swift in Sources */,
 				79F48A1C232D8A4A00C3D2C6 /* Routes.swift in Sources */,
 				79408224232D9A220060D8FB /* InsideJobController.swift in Sources */,
+				799181C52331BFB700894A38 /* CoreDao.swift in Sources */,
 				793C05512328731A005CB294 /* Service.swift in Sources */,
 				79F48A0E232D4E1E00C3D2C6 /* LayoutAnchor.swift in Sources */,
 				79408229232D9D560060D8FB /* InsideJobViewModel.swift in Sources */,
@@ -742,6 +814,7 @@
 			baseConfigurationReference = 38512BBAB77FCDF71B3A622D /* Pods-Dework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6FYGZ29HL;
 				INFOPLIST_FILE = Dework/Info.plist;
@@ -751,6 +824,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.academy.Dework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -761,6 +835,7 @@
 			baseConfigurationReference = B10A6042EC7B0A45218631B9 /* Pods-Dework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6FYGZ29HL;
 				INFOPLIST_FILE = Dework/Info.plist;
@@ -770,6 +845,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.academy.Dework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -35,10 +35,27 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
         return label
     }()
     
+    lazy var labelCollectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView.backgroundColor = .clear
+        collectionView.register(cellType: ListLabelCell.self)
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.isPagingEnabled = true
+        return collectionView
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         buildViewHierarchy()
         setupConstraints()
+        setupShadow()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    fileprivate func setupShadow() {
         self.backgroundColor = .primaryColor
         self.layer.cornerRadius = 16
         self.layer.shadowColor = UIColor.black.cgColor
@@ -47,15 +64,15 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
         self.layer.shadowOpacity = 0.5
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     func buildViewHierarchy() {
-        addSubviews([imageJob, nameJob, recruiterJob])
+        addSubviews([imageJob, nameJob, recruiterJob, labelCollectionView])
     }
     
     func setupConstraints() {
+        if let layout = labelCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+        }
+        
         imageJob.cBuild { (make) in
             make.top.equal(to: self.topAnchor, offsetBy: 10)
             make.leading.equal(to: self.leadingAnchor, offsetBy: 10)
@@ -75,6 +92,12 @@ class ListWorkCell: UICollectionViewCell,ConfigurableUI, Reusable {
             make.trailing.equal(to: nameJob.trailingAnchor)
         }
         
+        labelCollectionView.cBuild { (make) in
+            make.top.equal(to: imageJob.bottomAnchor, offsetBy: 20)
+            make.leading.equal(to: leadingAnchor, offsetBy: 5)
+            make.trailing.equal(to: trailingAnchor, offsetBy: -5)
+            make.bottom.equal(to: bottomAnchor, offsetBy: -5)
+        }
     }
     
     func setup(viewModel: ListWorksCellViewModel) {

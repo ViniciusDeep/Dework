@@ -11,8 +11,17 @@ import Foundation
 struct InsideJobViewModel {
     
     let mardownText: String?
+    let title: String?
+    let publisher: String
     
     init(job: Job) {
         mardownText = job.body
+        title = job.title
+        publisher = job.user.username ?? ""
     }
+    
+    public func saveJobToPersistence() {
+        
+    }
+    
 }

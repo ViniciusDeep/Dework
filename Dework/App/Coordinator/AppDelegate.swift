@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    func applicationWillTerminate(_ application: UIApplication) {}
+    func applicationWillTerminate(_ application: UIApplication) {
+        let coreStack = CoreStack(with: "Dework")
+        coreStack.saveContext()
+    }
 }
 

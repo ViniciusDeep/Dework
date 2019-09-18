@@ -21,7 +21,11 @@ struct InsideJobViewModel {
     }
     
     public func saveJobToPersistence() {
-        
+        let coreDao = CoreDao<FavoriteJob>(with: "Dework")
+        let favoriteJob = coreDao.new()
+        favoriteJob.title = self.title
+        favoriteJob.body = self.mardownText
+        favoriteJob.publisher = self.publisher
+        coreDao.insert(object: favoriteJob)
     }
-    
 }

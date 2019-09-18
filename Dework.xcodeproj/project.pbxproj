@@ -24,6 +24,11 @@
 		799181C42331BFB700894A38 /* ConfigurableDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181C02331BFB700894A38 /* ConfigurableDao.swift */; };
 		799181C52331BFB700894A38 /* CoreDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181C12331BFB700894A38 /* CoreDao.swift */; };
 		799181C62331BFB700894A38 /* CoreStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181C22331BFB700894A38 /* CoreStack.swift */; };
+		799181CA2331C6D400894A38 /* Dework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 799181C82331C6D400894A38 /* Dework.xcdatamodeld */; };
+		799181CC2331C84500894A38 /* FavoriteJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181CB2331C84500894A38 /* FavoriteJob.swift */; };
+		799181CE2331CB3400894A38 /* ListFavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181CD2331CB3400894A38 /* ListFavoritesViewModel.swift */; };
+		799181D02331CB8C00894A38 /* ListFavoriteCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181CF2331CB8C00894A38 /* ListFavoriteCellViewModel.swift */; };
+		799181D32331CC2100894A38 /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799181D22331CC2100894A38 /* FavoriteRepository.swift */; };
 		79A8F534232EADED00E15253 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8F533232EADED00E15253 /* CustomTabBarController.swift */; };
 		79B96F17232F0366001E697C /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F16232F0366001E697C /* Job.swift */; };
 		79B96F19232FD6F9001E697C /* ListTagsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B96F18232FD6F9001E697C /* ListTagsCell.swift */; };
@@ -84,6 +89,11 @@
 		799181C02331BFB700894A38 /* ConfigurableDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurableDao.swift; path = ../../../../CoreDao/CoreDao/Source/ConfigurableDao.swift; sourceTree = "<group>"; };
 		799181C12331BFB700894A38 /* CoreDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDao.swift; path = ../../../../CoreDao/CoreDao/Source/CoreDao.swift; sourceTree = "<group>"; };
 		799181C22331BFB700894A38 /* CoreStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreStack.swift; path = ../../../../CoreDao/CoreDao/Source/CoreStack.swift; sourceTree = "<group>"; };
+		799181C92331C6D400894A38 /* Dework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dework.xcdatamodel; sourceTree = "<group>"; };
+		799181CB2331C84500894A38 /* FavoriteJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteJob.swift; sourceTree = "<group>"; };
+		799181CD2331CB3400894A38 /* ListFavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavoritesViewModel.swift; sourceTree = "<group>"; };
+		799181CF2331CB8C00894A38 /* ListFavoriteCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFavoriteCellViewModel.swift; sourceTree = "<group>"; };
+		799181D22331CC2100894A38 /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
 		79A8F533232EADED00E15253 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		79B96F16232F0366001E697C /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		79B96F18232FD6F9001E697C /* ListTagsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTagsCell.swift; sourceTree = "<group>"; };
@@ -315,6 +325,8 @@
 		799181B62331806500894A38 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				799181CD2331CB3400894A38 /* ListFavoritesViewModel.swift */,
+				799181CF2331CB8C00894A38 /* ListFavoriteCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -331,6 +343,7 @@
 		799181BE2331BFA000894A38 /* CoreDao */ = {
 			isa = PBXGroup;
 			children = (
+				799181C72331C6B700894A38 /* DataModel */,
 				799181C02331BFB700894A38 /* ConfigurableDao.swift */,
 				799181C12331BFB700894A38 /* CoreDao.swift */,
 				799181C22331BFB700894A38 /* CoreStack.swift */,
@@ -339,11 +352,28 @@
 			path = CoreDao;
 			sourceTree = "<group>";
 		};
+		799181C72331C6B700894A38 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				799181C82331C6D400894A38 /* Dework.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		799181D12331CC1500894A38 /* Bussiness */ = {
+			isa = PBXGroup;
+			children = (
+				799181D22331CC2100894A38 /* FavoriteRepository.swift */,
+			);
+			path = Bussiness;
+			sourceTree = "<group>";
+		};
 		79B96F15232F0354001E697C /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				79B96F16232F0366001E697C /* Job.swift */,
 				79B96F1E233008BE001E697C /* DogTag.swift */,
+				799181CB2331C84500894A38 /* FavoriteJob.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -351,6 +381,7 @@
 		79B96F2223314253001E697C /* ListFavoriteJobs */ = {
 			isa = PBXGroup;
 			children = (
+				799181D12331CC1500894A38 /* Bussiness */,
 				799181B62331806500894A38 /* ViewModel */,
 				799181B72331806D00894A38 /* View */,
 				799181B52331806000894A38 /* Controller */,
@@ -628,6 +659,7 @@
 				793C054F2328724B005CB294 /* MainCoordinator.swift in Sources */,
 				79B96F1D233003E4001E697C /* ListTagCellViewModel.swift in Sources */,
 				79B96F17232F0366001E697C /* Job.swift in Sources */,
+				799181CC2331C84500894A38 /* FavoriteJob.swift in Sources */,
 				799181C42331BFB700894A38 /* ConfigurableDao.swift in Sources */,
 				79F48A17232D848D00C3D2C6 /* ListWorksViewModel.swift in Sources */,
 				79F48A10232D4E4400C3D2C6 /* LayoutProperty.swift in Sources */,
@@ -643,12 +675,15 @@
 				79F48A15232D732300C3D2C6 /* JobsRepository.swift in Sources */,
 				79F489F7232D2FA000C3D2C6 /* ListWorksController.swift in Sources */,
 				793C052223287127005CB294 /* AppDelegate.swift in Sources */,
+				799181D02331CB8C00894A38 /* ListFavoriteCellViewModel.swift in Sources */,
 				799181B92331816700894A38 /* ListFavoriteJobsController.swift in Sources */,
 				79A8F534232EADED00E15253 /* CustomTabBarController.swift in Sources */,
 				79F48A03232D332A00C3D2C6 /* ListWorkView.swift in Sources */,
+				799181CE2331CB3400894A38 /* ListFavoritesViewModel.swift in Sources */,
 				79F48A12232D4E5800C3D2C6 /* LayoutProxy.swift in Sources */,
 				799181BD233188B800894A38 /* ListFavoritesCell.swift in Sources */,
 				79F48A05232D486E00C3D2C6 /* ListWorkCell.swift in Sources */,
+				799181D32331CC2100894A38 /* FavoriteRepository.swift in Sources */,
 				79F489FE232D316B00C3D2C6 /* Configurable.swift in Sources */,
 				799181BB2331840C00894A38 /* ListFavoritesView.swift in Sources */,
 				79B96F1B232FEACB001E697C /* ListTagsViewModel.swift in Sources */,
@@ -660,6 +695,7 @@
 				79F48A0E232D4E1E00C3D2C6 /* LayoutAnchor.swift in Sources */,
 				79408229232D9D560060D8FB /* InsideJobViewModel.swift in Sources */,
 				79F48A0C232D4E0200C3D2C6 /* LayoutAnchor+Operations.swift in Sources */,
+				799181CA2331C6D400894A38 /* Dework.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,6 +962,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		799181C82331C6D400894A38 /* Dework.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				799181C92331C6D400894A38 /* Dework.xcdatamodel */,
+			);
+			currentVersion = 799181C92331C6D400894A38 /* Dework.xcdatamodel */;
+			path = Dework.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 793C051623287127005CB294 /* Project object */;
 }

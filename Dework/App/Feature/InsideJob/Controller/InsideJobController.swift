@@ -41,6 +41,7 @@ class InsideJobController: UIViewController, ConfigurableUI {
         navigationItem.rightBarButtonItems?.forEach({ (button) in
             button.image = UIImage(named: "star")
         })
+        insideJobViewModel.saveJobToPersistence()
     }
     
 }

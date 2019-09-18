@@ -58,6 +58,10 @@ class ListFavoritesCell: UITableViewCell, Reusable, ConfigurableUI {
             make.leading.equal(to: jobTitle.leadingAnchor)
             make.trailing.equal(to: jobTitle.trailingAnchor)
         }
-        
+    }
+    
+    func setup(withViewModel viewModel: ListFavoriteCellViewModel) {
+        jobTitle.text = viewModel.favoriteJob?.title
+        jobRecruiter.text = viewModel.favoriteJob?.publisher
     }
 }

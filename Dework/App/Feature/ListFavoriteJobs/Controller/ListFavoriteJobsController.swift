@@ -50,7 +50,6 @@ extension ListFavoriteController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    navigationController?.pushViewController(InsideJobController(listFavoriteViewModel.didPerformFavoriteToJob(atIndex: indexPath)), animated: true)
-        
+        navigationController?.pushViewController(InsideJobController(listFavoriteViewModel.didPerformFavoriteToJob(atIndex: indexPath)), animated: true)
     }
 }

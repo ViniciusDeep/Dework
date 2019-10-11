@@ -17,6 +17,16 @@ Dework is solution to see the UPComing vacancy
 :zap: | Markdown rendering
 :octocat: | 100% free and open source
 
+#### Preview (;
+<p align="center">
+<img width="200" alt="Screen Shot 2019-08-28 at 22 25 25" src="https://user-images.githubusercontent.com/32227073/66674250-d6f1b800-ec38-11e9-8426-ba41892f73a3.jpg">
+</p>
+
+#### Tecnical
+
+* Architeture: MVVM
+* API: Git Hub API Issues
+
 ## Contributing
 
 We are always looking for contributions from **all skill levels**! A great way to get started 
